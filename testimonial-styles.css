@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('Playwrite_DE_Grund/PlaywriteDEGrund-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+body {
+  margin: 0;
+  font-family: 'MyCustomFont', 'sans-serif';
+  background-color: #f9f9f9;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+
+
+.my-float{
+	margin-top:16px;
+}
+
+@media (max-width: 768px) {
+  
+  .float{
+  right: 5px;
+  height: 45px;
+  width: 45px;
+  bottom: 10px;
+}
+.my-float{
+	margin-top:9px;
+}
+}
+
+.stories-first-section {
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Adjust this as needed */
+}
+
+
+
+nav {
+  position: absolute; /* Set the position to fixed */
+  top: 0; /* Position it at the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Make it span the full width of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #f9f9f9;
+  backdrop-filter: blur(5px);
+  z-index: 1000; /
+}
+
+.logo {
+  margin-bottom: -2rem;
+  margin-top: -2rem;
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.logo img{
+  max-height: 7rem; /* Adjust the height as needed */
+  width: 7rem; /* Maintain aspect ratio */
+  border-radius: 50%;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 0 1rem;
+}
+
+.nav-menu li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+
+  .logo {
+    margin-LEFT: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .logo img{
+    max-height: 3rem; /* Adjust the height as needed */
+    width: 5rem; /* Maintain aspect ratio */
+    border-radius: 50%;
+  }
+  .nav-toggle {
+    display: block;
+    margin-right: 1rem;
+    
+  }
+  
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    padding: 1rem 0;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
+
+.testimonials{
+  padding: 20px;
+  margin-top: 160px;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+.full-container1 {
+  border-color: black;
+  
+  max-width: 75vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+.small-container1 {
+  position: relative; /* Ensure relative positioning for absolute centering */
+  
+  background-image: url(VIOLET\ GRAIN.jpg); 
+  background-size: cover; /* Ensure the image covers the entire background */ 
+  background-position: center; /* Background color for the container */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  text-align: center; /* Center text horizontally */
+}
+
+
+
+.small-container1 img {
+  display: block; /* Display the image as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  
+}
+
+.main-text-container-2{
+  margin-left: 15vw;
+}
+
+/* Additional styles for responsiveness */
+@media only screen and (max-width: 600px) {
+  .testimonials{
+    margin-top: 160px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .main-container {
+    padding: 10px;
+  }
+  .main-text-container-2{
+    margin-left: 7vw;
+  }
+}
+
+
+.main-text-container {
+  height: auto;
+  margin-left: 10px;
+
+}
+
+.main-text-container p{
+  margin: 0;
+}
+
+.main-text-container-head{
+  align-items: center;
+  display: grid;
+  grid-template-columns:  4fr 1fr; /* 3 equal-width columns */
+  
+}
+.head2 a {
+  font-size: 10px;
+  color: black;
+
+}
+
+.footer{
+  margin-top: 160px;
+  display: grid;
+  justify-content: center;
+  
+}
+
+.social-icons {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+
+}
+
+.fab{
+  color: black;
+  
+}
+
+.fab:hover{
+  color: grey;
+}
+
+.company-name{
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+/* Styles for small screens */
