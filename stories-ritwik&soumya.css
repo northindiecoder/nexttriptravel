@@ -121,12 +121,20 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 50px;
   }
 
 
   .logo {
     margin-LEFT: 1rem;
     margin-top: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .logo img{
+    max-height: 5rem; /* Adjust the height as needed */
+    width: 5rem; /* Maintain aspect ratio */
+    border-radius: 50%;
   }
   .nav-toggle {
     display: block;
@@ -155,7 +163,6 @@ nav {
     text-align: center;
   }
 }
-
 .about-love-story{
     margin-top: 15%;
     width: 100%;

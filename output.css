@@ -7,6 +7,8 @@
 
   
 }
+
+
 body {
   margin: 0;
   font-family: 'MyCustomFont', 'sans-serif';
@@ -40,10 +42,11 @@ body {
   right: 5px;
   height: 45px;
   width: 45px;
-  bottom: 10px;
+  bottom: 15px;
 }
 .my-float{
-	margin-top:9px;
+	margin-top:0px;
+  
 }
 }
 
@@ -153,7 +156,7 @@ nav {
   }
 
   .logo img{
-    max-height: 3rem; /* Adjust the height as needed */
+    max-height: 5rem; /* Adjust the height as needed */
     width: 5rem; /* Maintain aspect ratio */
     border-radius: 50%;
   }
@@ -432,7 +435,7 @@ input:checked + label {
   
   height: auto;
   width: 100%;
-  background: #ffffff url("tbtt.jpg") no-repeat fixed;
+  background: #ffffff url("theteambehind.webp") no-repeat fixed;
   background-size: cover;
   background-position: 50% 50%;
   justify-content: center;
@@ -485,9 +488,16 @@ input:checked + label {
   
 }
 
+.form1{
+  display: block;
+}
 
+.main-text-container1 {
+  height: auto;
+  margin-left: 10px;
+  text-align: center;
 
-
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -514,7 +524,7 @@ input:checked + label {
   
     height: auto;
     width: 100%;
-    background: #ffffff url("tbttm.jpg") no-repeat fixed;
+    background: #ffffff url("theteambehindmobile.webp") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
     justify-content: center;
@@ -567,44 +577,8 @@ input:checked + label {
 }
 
 
-
-.footer{
-  margin-top: 160px;
-  display: grid;
-  justify-content: center;
-  
-}
-
-
-
-
-
-.social-icons {
- 
- 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- 
-
-}
-
-.fab{
-  color: black;
-  
-}
-
-.fab:hover{
-  color: grey;
-}
-
-.company-name{
-  margin-top: 40px;
-  text-align: center;
-}
-
 .form{
-  margin-top: 10PX;
+  margin-top: 80PX;
   display: flex;
   justify-content: center;
 }
@@ -683,8 +657,38 @@ input:checked + label {
  }
 }
 
+.footer{
+  margin-top: 160px;
+  display: grid;
+  justify-content: center;
+  
+}
 
+.social-icons {
+ 
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
 
+}
+
+.fab{
+  color: black;
+  
+}
+
+.fab:hover{
+  color: grey;
+}
+
+.company-name{
+  margin-top: 40px;
+  text-align: center;
+}
 
 
 /* Styles for small screens */
+
+  

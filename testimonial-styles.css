@@ -132,7 +132,7 @@ nav {
   }
 
   .logo img{
-    max-height: 3rem; /* Adjust the height as needed */
+    max-height: 5rem; /* Adjust the height as needed */
     width: 5rem; /* Maintain aspect ratio */
     border-radius: 50%;
   }

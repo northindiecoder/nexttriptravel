@@ -126,11 +126,12 @@ nav {
   .logo {
     margin-LEFT: 1rem;
     margin-top: 1rem;
+    margin-bottom: 0.7rem;
   }
 
   .logo img{
-    max-height: 3rem; /* Adjust the height as needed */
-    width: 3rem; /* Maintain aspect ratio */
+    max-height: 5rem; /* Adjust the height as needed */
+    width: 5rem; /* Maintain aspect ratio */
     border-radius: 50%;
   }
   .nav-toggle {
@@ -160,7 +161,6 @@ nav {
     text-align: center;
   }
 }
-
 
 .second-section {
   padding: 20px;

@@ -86,12 +86,20 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      height: 50px;
     }
   
   
     .logo {
       margin-LEFT: 1rem;
       margin-top: 1rem;
+      margin-bottom: 0.7rem;
+    }
+  
+    .logo img{
+      max-height: 5rem; /* Adjust the height as needed */
+      width: 5rem; /* Maintain aspect ratio */
+      border-radius: 50%;
     }
     .nav-toggle {
       display: block;
@@ -119,8 +127,8 @@
       margin: 1rem 0;
       text-align: center;
     }
-  }
-    
+  } 
+
   form {
 
     display: flex;
@@ -180,7 +188,7 @@
     
     height: auto;
     width: 100%;
-    background: #ffffff url("tbtt.jpg") no-repeat fixed;
+    background: #ffffff url("theteambehind.webp") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
     justify-content: center;
@@ -262,7 +270,7 @@
     
       height: auto;
       width: 100%;
-      background: #ffffff url("mbtl7.jpg") no-repeat fixed;
+      background: #ffffff url("theteambehindmobile.webp") no-repeat fixed;
       background-size: cover;
       background-position: 50% 50%;
       justify-content: center;
@@ -303,6 +311,66 @@
       padding-right: 0px;  
     }
   }
+
+.otherlinksdiv{
+
+  display: grid;
+  height: 300px;
+  width: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 0 auto;
+  grid-column-gap: 20px; /* Remove the gap between columns */
+  grid-row-gap: 0;
+  
+}
+
+.links{
+ 
+  height: 50px;
+  width: 130px;
+  
+}
+
+.btntxt{
+  padding: 0%;
+  margin: -20%;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .otherlinksdiv{
+
+    display: grid;
+    height: 300px;
+    width: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+    margin: 0 auto;
+    grid-column-gap: 20px; /* Remove the gap between columns */
+    grid-row-gap: 0;
+    
+  }
+  
+  .links{
+   
+    height: 50px;
+    width: 80px;
+    
+  }
+  
+  .btntxt{
+    padding: 0%;
+    margin: -20%;
+    font-size: 12px;
+  }
+  
+
+
+
+}
+
 
 .form{
   margin-top: 80PX;
