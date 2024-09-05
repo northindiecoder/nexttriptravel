@@ -27,6 +27,41 @@ document.addEventListener("DOMContentLoaded", function() {
 
     console.log("Auto-sliding initialized with", inputs.length, "slides");
 });
+
+let currentIndex = 0;
+
+function scrollLeft() {
+    const container = document.querySelector('.grid-container');
+    const containerWidth = container.clientWidth;
+    const totalItems = container.children.length;
+
+    if (currentIndex > 0) {
+        currentIndex--;
+        container.scrollTo({
+            left: currentIndex * containerWidth,
+            behavior: 'smooth'
+        });
+    }
+}
+
+function scrollRight() {
+    const container = document.querySelector('.grid-container');
+    const containerWidth = container.clientWidth;
+    const totalItems = container.children.length;
+
+    if (currentIndex < totalItems - 1) {
+        currentIndex++;
+        container.scrollTo({
+            left: currentIndex * containerWidth,
+            behavior: 'smooth'
+        });
+    }
+}
+
+// Adding event listeners to arrow buttons
+document.querySelector('.arrow.left').addEventListener('click', scrollLeft);
+document.querySelector('.arrow.right').addEventListener('click', scrollRight);
+
  
   
     
