@@ -564,7 +564,7 @@ height:auto;
   
 }
 
-.grid-item img {
+.grid-item-1 img {
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -577,7 +577,7 @@ height:auto;
       grid-template-columns: 1fr; /* Single column for mobile devices */
   }
 
-  .grid-item img {
+  .grid-item-1 img {
     width: 240px;
     height: 240px;
     object-fit: cover;
@@ -607,3 +607,147 @@ height:auto;
     }
     
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr); /* 9 columns */
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.grid-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.grid-item {
+  width: 400px;
+  height: 600px;
+  scroll-snap-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(9, 100%);
+      overflow-x: hidden; /* Hide overflow since we'll use JS to scroll */
+      position: relative;
+  }
+
+  .grid-item {
+      width: 100%;
+  }
+
+  .arrow {
+      position: absolute;
+      bottom: 10px; /* Position arrows at the bottom */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .arrow.left {
+      margin-right: 30px; /* Adjust left button placement */
+  }
+
+  .arrow.right {
+      margin-left: 30px; /* Adjust right button placement */
+  }
+}
+
+@media (min-width: 769px) {
+  .arrow {
+      display: none; /* Hide arrows on larger screens */
+  }
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 400px); /* 9 images, each 400px wide */
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.grid-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.grid-item {
+  width: 400px;
+  height: 600px;
+  scroll-snap-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  
+  .grid-container {
+      grid-template-columns: repeat(9, 100%);
+      overflow-x: hidden; 
+     
+      scroll-behavior: smooth; 
+      transition: scroll 0.5s ease-in-out; 
+  }
+
+  .grid-item {
+    width: 300px;
+  height: 450px;
+  scroll-snap-align: center;
+  }
+
+
+ 
+  .arrow-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 60px;
+      position: relative;
+      width: 100%;
+  }
+
+  
+  .arrow {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border-radius: 20%;
+      padding: 10px;
+      cursor: pointer;
+      margin-left: 30px;
+      
+  }
+  .arrow:first-child {
+    margin-left: -10px; /* Remove margin from the first arrow (left arrow) */
+}
+}
+
+
+@media (min-width: 769px) {
+  .arrow-container {
+      display: none; /* Hide arrows on larger screens */
+  }
+}
+
