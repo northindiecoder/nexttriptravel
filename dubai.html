@@ -1,0 +1,204 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Travel to Dubai" content="Plan you next trip to Bali">
+    <title>Dazzling Dubai</title>
+    <link rel="stylesheet" href="dlp.css">
+    <link rel="icon" href="favicon.ico">
+    
+</head>
+
+
+<body>
+    <div class="hero-section-text">
+        <div class="text-title">
+            <h1>Dubai</h1>
+        </div>
+        <div class="text-title-description">
+            <h3>Beyond Burj Khalifa<br>
+                Modern fusion of Culture</h3>
+        </div> 
+
+    </div>  
+
+    <div class="video-container">
+        <video id="myVideo" autoplay muted loop>
+            <source src="/video/dubai landing page comp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+
+    
+        <div class="second-section">
+            <div class="second-text-box">
+
+                <h2>Get to know Dubai.</h2>
+            </div>
+        </div>
+
+
+        <section class="image-slider">
+            <div class="slider-container">
+                <div class="wrapper">
+                    <div class="container">
+                     <input type="radio" name="slide" id="c1" checked>
+                        <label for="c1" class="card">
+                           
+                        </label>
+                            <input type="radio" name="slide" id="c2" >
+                        <label for="c2" class="card">
+                            
+                        </label>
+                        <input type="radio" name="slide" id="c3" >
+                        <label for="c3" class="card">
+                            
+                        </label>
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c4" class="card">
+                            
+                        </label>
+
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c5" class="card">
+                            
+                        </label>
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c6" class="card">
+                            
+                        </label>
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c7" class="card">
+                            
+                        </label>
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c8" class="card">
+                            
+                        </label>
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c9" class="card">
+                            
+                        </label>
+                        
+                            
+                        </label>
+                    </div>
+                </div>
+
+
+            </div>
+    
+        </section>
+
+
+
+
+    <section class="form-section"  id="request-trip-details">
+            <div class="form-heading">
+            <h1> Request Trip Details.</h1>
+
+            </div>
+            <div class="form-content">
+                <form>
+                    <br>
+                                      
+                  <label>
+                    <input type="tel" name="MobileNumber" pattern="[0-9]{10}" placeholder="WhatsApp Number" required>
+                  </label>
+                  
+                  <input type="submit" value="Get Trip Details on WhatsApp">
+                  <br><br>
+                </form>
+            </div>
+    </section>
+    <script>
+        $(document).ready(function() {
+          $('form').submit(function(e) {
+            e.preventDefault();
+            
+            // Serialize the form data
+            const formData = $(this).serialize();
+            
+            // Send the form data to SheetDB using AJAX
+            $.ajax({
+              url: 'https://sheetdb.io/api/v1/kd34rgu0kvttc',
+              type: 'POST',
+              data: formData,
+              success: function() {
+                // Show a pop-up message
+                alert('Thank you! You will be contacted soon.');
+                
+                // Clear the form inputs
+                $('form')[0].reset();
+              },
+              error: function() {
+                // Show an error message if submission fails
+                alert('Oops! Something went wrong. Please try again.');
+              }
+            });
+          });
+        });
+      </script>
+       
+    <section class="credit-section">
+        <div class="credit-text">
+            <h1>Get to know Us.</h1>
+
+        </div>
+    <div class="credit-image">
+            
+    </div>
+
+    </section>
+
+       <section class="review-section">
+        <div class="review-heading">
+            <h1>With Love, from Our Travellers.</h1>
+
+        </div>
+        <div class ="full-container1">
+            <div class="small-container1">
+              
+              
+              <img src="/images/t1.webp" alt="Image 1">
+            </div>
+            <div class="small-container1">
+              
+              <img src="/images/t2.webp" alt="Image 2">
+            </div>
+          </div>
+      
+       </section>
+
+       <section class="trip-request-again">
+        <div class="form-heading">
+            <h1> Request Trip Details.</h1>
+
+            </div>
+        <div class="button-link">
+            <button class="back-to-form-button" onclick="document.getElementById('request-trip-details').scrollIntoView({ behavior: 'smooth' });">
+                Request Trip Details
+            </button>
+        </div>
+       </section>
+
+       <section class="faq">
+        <div class="faq-details">
+            <div class="details-head">
+
+                <h1> Why Chose Us? </h1>
+            </div>
+            <div class="details-tab">
+                <div class="grid-item"><img src="/images/w1.png" alt="Image 1"></div>
+                <div class="grid-item"><img src="/images/w2.png" alt="Image 2"></div>
+                <div class="grid-item"><img src="/images/w3.png" alt="Image 3"></div>
+            </div>
+
+
+
+        </div>
+
+
+       </section>
+        <script src="scriptdubai.js"></script>
+</body>
